@@ -17,8 +17,13 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import  settings
 from django.conf.urls.static import static
-
+from Artist.views import ArtistPage, HomePage
+from Customer.views import sign_in
+app_name = 'music'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('Home/', HomePage, name='home'),
+    path('signin/', sign_in, name='sign_in'),
+    path('<str:name>/', ArtistPage, name='artist'),
 ]

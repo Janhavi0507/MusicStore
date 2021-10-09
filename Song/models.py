@@ -1,7 +1,7 @@
 from django.db import models
 from django.db.models.signals import pre_save
 from Album.models import Album
-from .utils import unique_song_id_generator
+from MusicStore.utils import unique_song_id_generator
 
 # Create your models here.
 
