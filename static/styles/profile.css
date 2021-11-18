@@ -1,0 +1,569 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+  background-color: #efe2b8;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.navbar .header1 .nav-img {
+  width: 30px;
+  height: 30px;
+  margin: -8px;
+}
+
+.navbar .header1 span {
+  padding-left: 15px;
+  font-size: 20px;
+}
+
+.navbar a, .header1
+{
+  color: #251a0b;
+  font-size: larger;
+  float: left;
+  display: block;
+  padding: 15px 16px;
+  text-decoration: none;
+  display: inline;
+  height: 20px;
+  margin-right: 50px;
+}
+.menu a:link {
+  text-decoration-line: none;
+  margin:0 auto;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.menu .account #signin {
+  float: right;
+}
+
+
+.navbar a:hover
+{
+  background-color: white;
+  color: slategrey;
+  
+}
+
+/* main section */
+
+.main {
+  margin-top: 0px ;
+  background-color: #f8f2e0;
+}
+
+.main .container {
+  border: 1px solid black;
+  border-radius: 40px;
+  width: 80%;
+  height: 500px;
+  margin: 0% auto;
+  margin-bottom: 80px;
+  display: flex;
+}
+
+.main .main-text {
+  width: 100%;
+  height: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  align-items: center;
+  align-content: center;
+  margin-left: 0px;
+  color: #251a0b;
+}
+
+.main h4 {
+  margin-top: 120px;
+  font-size: 18px;
+}
+
+.main h2 {
+  margin-top: -20px;
+  font-size: 50px;
+}
+
+.main h5 {
+  margin-top: -30px;
+  font-size: 15px;
+}
+
+.main a {
+  margin-top: -30px;
+  font-size: 15px;
+  color: rgb(158, 152, 152);
+}
+
+.main .right {
+  width: 100%;
+  height: 80%;
+  margin-right: 25px;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.main .right img {
+  width: 500px;
+  height: 500px;
+}
+
+section
+{
+  background-size: 100%;
+  display: flex;
+  margin:0%;
+  margin-top: -2%;
+  text-align: center;
+  overflow-x: auto;
+  padding-top: 5%;
+
+}
+
+.trending {
+  margin: 0 auto;
+  background-color: #efe2b8;
+  height: 350px;
+  display: block;
+}
+
+.trending .text {
+  margin-top: -50px;
+  font-size: 20px;
+  margin-left: 40px;
+}
+
+.trending .links {
+  display: inline-flex;
+  margin-top: -20px;
+}
+
+.trending .trend {
+  margin-top: 20px;
+  width: 250px;
+  height: 250px;
+}
+
+.trending a {
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.trending .trend .img {
+  margin-top: 15px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.trending .trend h2 {
+  margin-top: 20px;
+  font-size: 28px;
+}
+
+.trending .trend h4 {
+  margin-top: -5px;
+  font-size: 24px;
+}
+
+
+.artists {
+  margin: 0 auto;
+  background-color: #efe2b8;
+  height: 400px;
+  display: block;
+}
+
+.artists .text {
+  margin-top: -50px;
+  font-size: 30px;
+  margin-left: 40px;
+}
+
+.artists .links {
+  display: inline-flex;
+  margin-top: 30px;
+}
+
+.artists .trend_artist {
+  margin-top: 20px;
+  width: 250px;
+  height: 250px;
+}
+
+.artists a {
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.artists .trend_artist .img {
+  margin-top: 15px;
+  width: 55%;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.artists .trend_artist h4 {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.footer {
+  width: 100%;
+  height: 200px;
+  display: inline-flex;
+  margin: 0;
+  margin-top: -70px;
+}
+
+.footer .info {
+  width: 50%;
+  height: 100%;
+  background-color: #fff7db;
+}
+
+.footer .socialMedia {
+  width: 50%;
+  height: 100%;
+  background-color: #fff7db;
+}
+
+.footer .socialMedia a {
+  display: block;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.footer .socialMedia a, i {
+  margin-right: 10px;
+}
+
+.footer .info h3 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+/*--------------------------Profile page--------------------------*/
+
+/*---------------------profile css----------------------------------*/
+
+.profile{
+ 
+  height: auto;
+  margin:  20px ;
+  padding: 10px 30px 10px 50px;
+  background-color:#f8f2e0;
+  border: 2px rgba(0, 0, 0, 0.178) solid;
+  
+  
+}
+.profile h1{
+  text-align: left;
+  font-family:cursive;
+  font-weight: bold;;
+  font-size:xxx-large;
+  margin: 20px;
+  text-decoration: underline;
+  text-shadow: gainsboro 2px 2px;
+}
+
+#profileImage a{
+  position: relative;
+  float: right;
+  top: -10px;
+  margin: 20px;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+ 
+  padding-right: 20%;
+}
+#profileImage a h3{
+  color: darkgreen;
+}
+#profileImage a h3:hover{
+  background-color:#888;
+}
+#profileImage a img{
+  background-color: white;
+  border-radius: 100%;
+}
+.profileDetails{
+  margin-top:20px ;
+  padding: 0% 5%;
+}
+
+.profileDetails input{
+  display: block;
+  height: 30px;
+  width: 50%;
+  padding:5px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-size: x-large;
+  background-color: white;
+  border:2px rgba(0, 0, 0, 0.178) solid;;
+}
+.profileDetails label{
+  text-transform: capitalize;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+/* profile playlist and artist*/
+.playlistContainer, .artistContainer{
+  border: 2px rgba(0, 0, 0, 0.178) solid;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color:#f8f2e0;
+}
+
+.yourPlaylist,.yourArtist{
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+
+}
+
+.yourPlaylist a,.yourArtist a{
+  text-decoration-line: none;
+}
+
+.yourPlaylist img{
+  width: 250px;
+  height: 250px;
+  margin: 10px 20px;
+}
+.yourArtist img{
+  width: 210px;
+  height: 210px;
+  margin: 10px 10px;
+  border-radius: 100%;
+}
+
+
+.yourPlaylist h3, .yourArtist h3{
+  position: relative;
+  left: 50px;
+  margin-top: 2px;
+  font-size: x-large;
+  font-weight: 700;
+  
+}
+
+.yourArtist h3,.yourPlaylist h3{
+  text-align: left;
+  margin-top: 2px;
+  font-size: x-large;
+  font-weight: 700;
+  color: black;
+}
+
+
+.artistContainer h1, .playlistContainer h1{
+
+  font-family:cursive;
+  font-size: -webkit-xxx-large;
+  font-size: xxx-large;
+}
+.card a:hover,.discCard a:hover
+{
+  filter:contrast(150%);
+  transition: all .2s ease-in-out;  
+}
+
+
+.artistContainer h1 a{
+  font-size: 20px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.container .form-box {
+  width: 600px;
+  height: 550px;
+  margin: 2% auto;
+  position: relative;
+  /* border: 1px solid black; */
+}
+
+.container .form-box .button-box {
+  width: 100%;
+  margin: 5px auto;
+  justify-content: center;
+  position: relative;
+  border-radius: 30px;
+  display: flex;
+  
+}
+
+/* .container .form-box .button-box .toggle-btn {
+  border-radius: 5px;
+  position: relative;
+  font-size: 22px;
+  border: 0;
+  padding: 10px 20px;
+  background:#fff;
+  border-radius: 50px;
+} */
+
+.form-box .container-box {
+  width: 100%;
+  justify-content: center;
+}
+
+.form-box .container-box .sign-in, .sign-up {
+  position: relative;
+  width:380px;
+  height: 100%;
+  border: 0;
+  font-size: 20px;
+  padding:20px 30px;
+  background:#fff;
+  margin: auto 15%;
+  margin-bottom: 15%;
+  box-shadow:2px 2px 5px 5px rgba(0,0,0,0.15);
+  border-radius:10px;
+  z-index: 1px;
+}
+
+#signin {
+  margin-right: 10px;
+  margin-top: 15px;
+  font-size: 20px;
+  justify-self: center;
+}
+
+.sign-in h2, .sign-up h2 {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.sign-in .form-element, .sign-up .form-element {
+  margin: 20px 15px;
+}
+
+.sign-in .form-element .signup-link, .sign-up .form-element .signin-link {
+  text-decoration: none;
+}
+
+.sign-in .form-checkbox {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.sign-in .remember-me {
+  float: left;
+}
+
+.sign-in .form-button, .sign-up .form-button {
+  margin-top: 20px;
+  margin-left: 40%;
+}
+
+.sign-in .form-button #signin, .sign-up .form-button #signin {
+  margin-top: 10px;
+  font-size: 22px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.sign-in .form-checkbox .forgot-password {
+  float: right;
+  text-decoration: none;
+}
+
+.sign-in .form-element input, .sign-up .form-element input {
+  width: 100%;
+  height: 20px;
+  margin-top: 5px;
+}
+
+
+#show:checked ~ .sign-in {
+  display: block;
+}
+
+#show {
+  display: none;
+}
+
+.sign-in {
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  display: none;
+  transform:translate(-50%,-50%) scale(1.25);
+  width:380px;
+  height: 60%;
+  padding:20px 30px;
+  background:#fff;
+  box-shadow:2px 2px 5px 5px rgba(0,0,0,0.15);
+  border-radius:10px;
+  transition:top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms, transform 200ms ease-in-out 0ms;
+  z-index: 1px;
+}
+
+#signin {
+  margin-right: 10px;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.sign-in .close-btn {
+  /* position: absolute; */
+  float: right;
+}
+
+.sign-in h2 {
+  margin-top: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.sign-in .form-element {
+  margin: 20px 15px;
+}
+
+.sign-in .form-checkbox {
+  margin-left: 10px;
+}
+
+.sign-in .form-button {
+  margin-top: 20px;
+  margin-left: 40%;
+}
+
+.sign-in .form-button #signin {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.sign-in .form-checkbox .forgot-password {
+  float: right;
+}
+
+.sign-in .form-element input {
+  width: 100%;
+  height: 20px;
+  margin-top: 5px;
+}

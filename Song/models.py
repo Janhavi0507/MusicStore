@@ -10,6 +10,7 @@ class Song(models.Model):
     Title = models.CharField(max_length=200)
     SongAudio = models.FileField(upload_to='audio', null=True)
     Album = models.ForeignKey(Album, on_delete=models.CASCADE)
+    liked = models.PositiveBigIntegerField(default=0)
 
     def __str__(self):
         return f'{self.Title} ({self.Album.AlbumName})'

@@ -1,0 +1,60 @@
+{% include "html/base.html" %}
+
+{% block head %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles/login_signin.css' %}" type="text/css">
+{% endblock %}
+
+{% block content %}
+<!-- 
+<div class="container">
+    <div class="form-box">
+        <div class="container-box">
+            <div class="sign-up">
+                <h2>Sign up</h2>
+                <form action="#">
+                    <div class="form-element">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" placeholder="Enter first name">
+                    </div>
+                    <div class="form-element">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" placeholder="Enter last name">
+                    </div>
+                    <div class="form-element">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" id="phone" placeholder="Enter phone number">
+                    </div>
+                    <div class="form-element">
+                        <label for="uname">Username</label>
+                        <input type="text" id="uname" placeholder="Enter username">
+                    </div>
+                    <div class="form-element">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Enter email">
+                    </div>
+                    <div class="form-element">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter password">
+                    </div>
+                    <div class="form-button">
+                        <button type="submit" id="signin">Sign up</button>
+                    </div>
+                    <div class="form-element">
+                        Already have an account? <a href="#" class="signin-link">Sign in</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<form class="site-form" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Sign-in">
+    </form>
+
+    {% include 'html/footer.html' %}
+
+{% endblock %}

@@ -1,0 +1,152 @@
+.artistpage {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #f8f2e0;
+}
+
+.main {
+    width: 100%;
+    height: 300px;
+    display: inline-flex;
+    padding-top: 20px;
+}
+
+.main .image {
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.main .image .img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.main .info {
+    display: block;
+    padding-top: 40px;
+    padding-left: 50px;
+}
+
+.main .info a {
+    margin-right: 20px;
+}
+
+.main .info h1 {
+    font-size: 50px;
+}
+
+.main .info .play-btn {
+    width: 120px;
+    height: 50px;
+    margin-top: 30px;
+    font-size: 20px;
+    border-radius: 22px;
+    /* background-color: #d8b74a; */
+}
+
+.main .info .like-btn {
+    width: 55px;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 18px;
+}
+
+.main .info .like-btn i {
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-right: 10px;
+    margin-right: 15px;
+    font-size: 30px;
+    color: black;
+}
+
+.controls {
+    width: 100%;
+    height: 20%;
+    text-decoration: none;
+    margin: 0 auto;
+    background-color: #efe2b8;
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+.controls .songs-display {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+    margin: 0 auto;
+    display: flex;
+    list-style: none;
+}
+
+.controls .songs-display li {
+    margin: 0;
+    margin-right: 20px;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.controls .songs-display li a {
+    text-decoration: none;
+    font-size: 22px;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.content-list {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.overview {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.overview .songs {
+    width: 100%;
+    height: 102px;
+    font-size: 30px;
+    display: inline-flex;
+    display: grid;
+    vertical-align: middle;
+    grid-template-columns: 5% 20% 20% 30% 10%;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 100px;
+    border: 1px solid black;
+}
+
+.overview .songs .serialno {
+    padding-top: 25px;
+    padding-left: 30px;
+}
+
+.overview .songs .song-img {
+    height: 100px;
+    border-radius: 50%;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.overview .songs .song-name {
+    margin-top: 20px;
+}
+
+.overview .songs .player {
+    margin-top: 20px;
+}
+
+.overview .songs a, i {
+    margin-top: 15px;
+}

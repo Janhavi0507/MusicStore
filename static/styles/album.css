@@ -1,0 +1,114 @@
+.albumpage {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.albums {
+  width: 100%;
+  height: 300px;
+  display: inline-flex;
+  padding-top: 20px;
+}
+
+.albums .image {
+  margin-left: 10%;
+  margin-top: 20px;
+}
+
+.albums .image .img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.albums .info {
+  display: block;
+  padding-top: 40px;
+  padding-left: 50px;
+}
+
+.albums .info a {
+  margin-right: 20px;
+}
+
+.albums .info h1 {
+  font-size: 50px;
+}
+
+.albums .info .play-btn {
+  width: 120px;
+  height: 50px;
+  margin-top: 30px;
+  font-size: 20px;
+  border: 0px;
+  border-radius: 20px;
+  background-color: blue;
+}
+
+.albums .info .like-btn {
+  width: 50px;
+  height: 50px;
+  margin-top: 30px;
+  border-radius: 18px;
+  border: 0px;
+  background-color: transparent;
+}
+
+.albums .info .like-btn i {
+  margin: 0 auto;
+  padding-top: 5px;
+  padding-right: 10px;
+  margin-right: 15px;
+  font-size: 30px;
+  color: black;
+}
+
+.songs-list {
+  background-color:#efe2b8;
+}
+
+.overview {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.overview .songs {
+  width: 80%;
+  height: 60px;
+  font-size: 26px;
+  display: grid;
+  align-self: center;
+  /* vertical-align: middle; */
+  grid-template-columns: 5% 30% 40% 10%;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  border-radius: 100px;
+  border: 1px solid black;
+}
+
+.overview .songs .serialno {
+  text-align: center;
+  margin-top: 15px;
+  padding-left: 30px;
+}
+
+.overview .songs .song-name {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.overview .songs .player {
+  margin-top: 2px;
+}
+
+.overview .songs a, .overview .songs i {
+  margin-top: 8%;
+}

@@ -1,0 +1,112 @@
+{% include "html/base.html" %}
+
+{% block head %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles/profile.css' %}" type="text/css">
+{% endblock %}
+
+{% block content %}
+
+<div class="main-profile">
+  <div class="profile">
+    <h1>Profile</h1>
+    <div id="profileImage">
+      <a href="#">
+        <img src="/images/profileimage.png" alt="Profile Image" style="width: 200px;">
+        <h3>Edit Pic</h3>
+      </a>
+    </div>
+
+    <div class="profileDetails">
+      <label for="Name">{{ user.Username }}</label>
+      <input type="text" id="Name" value="John Doe">
+
+      <label for="username">username</label>
+      <input type="text" id="username" value="johndoe12">
+
+      <label for="emailId">emailId</label>
+      <input type="text" id="EmailId" value="john.doe@mail.com">
+
+      <label for="phoneno">Phone No</label>
+      <input type="text" id="phoneno" value="4563210789">
+    </div>
+  </div>
+  <!--Your playlists-->
+  <div class="playlistContainer">
+
+    <h1>Your Playlists</h1>
+    <div class="yourPlaylist">
+      <div class="card" id="playlist1">
+        <a href="#">
+          <img src="/images/yourartist/worout.webp" alt="">
+          <h3>Playlist1</h3>
+        </a>
+      </div>
+      <div class="card" id="playlist2">
+        <a href="#">
+          <img src="/images/yourartist/playlist1.webp" alt="">
+          <h3>Playlist2</h3>
+        </a>
+      </div>
+      <div class="card" id="playlist3">
+        <a href="#">
+          <img src="/images/music3.jpeg" alt="">
+          <h3>Playlist3</h3>
+        </a>
+      </div>
+      <div class="card" id="playlist3">
+        <a href="#">
+          <img src="/images/music3.jpeg" alt="">
+          <h3>playlist4</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--Artist you follow-->
+
+  <div class="artistContainer">
+    <h1>Artist you follows</h1>
+    <div class="yourArtist">
+      <div class="discCard" id="playlist1">
+        <a href="#">
+          <img src="/images/yourartist/adamlevine.jpg" alt="">
+          <h3>Adam Levine</h3>
+        </a>
+      </div>
+      <div class="discCard" id="playlist1">
+        <a href="#">
+          <img src="/images/yourartist/arijit.jpg" alt="">
+          <h3>Arijit Singh</h3>
+        </a>
+      </div>
+      <div class="discCard" id="playlist1">
+        <a href="#">
+          <img src="/images/yourartist/badshah.jpeg" alt="">
+          <h3>Badshaah</h3>
+        </a>
+      </div>
+      <div class="discCard" id="playlist1">
+        <a href="#">
+          <img src="/images/yourartist/neha.jpg" alt="">
+          <h3>Neha</h3>
+        </a>
+      </div>
+      <div class="discCard" id="playlist1">
+        <a href="#">
+          <img src="/images/yourartist/pitbull.jpg" alt="">
+          <h3>Pit Bull</h3>
+        </a>
+      </div>
+      <div class="discCard" id="playlist1">
+        <a href="#">
+          <img src="/images/yourartist/pritam.jpg" alt="">
+          <h3>Pritam</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include 'html/footer.html' %}
+
+{% endblock %}

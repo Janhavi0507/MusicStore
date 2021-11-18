@@ -1,0 +1,97 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+.navbar {
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+  background-color: #efe2b8;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar .header1 .nav-img {
+  width: 30px;
+  height: 30px;
+  margin: -8px;
+}
+
+.navbar .header1 span {
+  padding-left: 15px;
+  font-size: 20px;
+}
+
+.navbar a, .header1
+{
+  color: #251a0b;
+  font-size: larger;
+  float: left;
+  display: block;
+  padding: 15px 16px;
+  text-decoration: none;
+  display: inline;
+  height: 20px;
+  margin-right: 50px;
+}
+.menu a:link {
+  text-decoration-line: none;
+  margin:0 auto;
+  text-align: center;
+  font-family: sans-serif;
+  /* font-weight: 500; */
+}
+
+.menu .account #signin {
+  float: right;
+}
+
+.menu .account #profile {
+  width: 20px;
+  height: 100%;
+  float: right;
+  margin-right: 20px;
+  padding-left: 20px;
+  border-radius: 50px;
+}
+
+.navbar a:hover {
+  background-color: white;
+  color: slategrey;
+}
+
+.footer {
+  width: 100%;
+  height: 200px;
+  display: inline-flex;
+  background-color: #fff7db;
+}
+
+.footer .info {
+  width: 50%;
+  height: 100%;
+}
+
+.footer .socialMedia {
+  width: 50%;
+  height: 100%;
+}
+
+.footer .socialMedia a {
+  display: block;
+  padding-top: 4%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.footer .socialMedia a, i {
+  margin-right: 10px;
+}
+
+.footer .info h3 {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 80px;
+}

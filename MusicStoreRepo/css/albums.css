@@ -1,0 +1,144 @@
+.body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.album-container {
+    margin: -10px;
+    padding: 0;
+    font-size: large;
+    font-family: sans-serif ;
+    font-weight: bold;
+}
+
+.main {
+    width: 100%;
+    height: 300px;
+    display: inline-flex;
+    padding-top: 20px;
+    
+}
+
+.main .image {
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.main .image .img {
+    width: 250px;
+    height: 250px;
+    
+}
+
+.main .info {
+    display: block;
+    padding-top: 40px;
+    padding-left: 50px;
+}
+
+.main .info a {
+    margin-right: 20px;
+}
+
+.main .info h1 {
+    font-size: 50px;
+}
+
+.main .info .play-btn {
+    width: 120px;
+    height: 50px;
+    margin-top: 30px;
+    font-size: 20px;
+    border-radius: 22px;
+    /* background-color: #d8b74a; */
+}
+
+
+
+.main .info .like-btn i {
+    padding-top: 5px;
+    padding-right: 10px;
+    margin-right: 15px;
+    font-size: 30px;
+    color: black;
+}
+.song-container
+{
+    margin-left:5% ;
+    margin-right: 5%;
+    margin-top:2%;
+}
+.playlist_image
+{text-align: center;
+    padding: 3%;
+}
+.playlist_image img{
+    height:200px;
+    width:200px;
+    
+}
+.songs{
+    display:grid;
+    grid-template-columns: 5% 10% 35% 15% 10% 10%; 
+    grid-template-rows: auto; 
+   justify-content: space-between;
+    grid-row-gap: 5%;
+    border-radius: 20px;
+    border-bottom: 2px rgb(0 0 0 / 50%) solid;
+    padding:1% 20px 1% 20px;
+    height: 50px;
+    font-size: small;
+}
+
+.songs  div {
+  text-align: center;
+}
+
+
+
+
+
+/*------------------------*/
+.albumInfo{
+    display: grid;
+    font-size: small;
+    line-height: 1.2rem;
+    color: rgb(95, 93, 93);
+}
+.albumButtons{
+    display: flex;
+    height: 40px;
+}
+.albumButtons a img{
+    height: 30px;
+    background-color:rgb(245, 245, 245);
+    padding:5px;
+    border-radius: 30px;
+}
+.albumButtons a{
+    font-size: x-large;
+    text-decoration: none;
+    color: white;
+}
+.playAll{
+    width:100px;
+    background-color: blue;
+    border-radius:30px;
+    text-align: center;
+    padding-top: 5px;  
+}
+.info .playAll:active{
+    background-color: rgb(52, 52, 255);
+
+}
+
+
+.songs .playbtn img{
+    border-radius: 100%;
+    background-color: white;
+}
+
+/*---*/
+.toggleplay{
+    background-color: red;
+}

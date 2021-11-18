@@ -1,0 +1,64 @@
+{% extends "html/base.html" %}
+
+{% block head %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles/artist.css' %}" type="text/css">
+{% endblock %}
+
+{% block content %}
+
+<div class="container artistpage">
+    <div class="artist">
+        <div class="image">
+            <img src="/media/{{ artist.Photo }}" alt="Artist Profile Photo"
+                class="img">
+        </div>
+        <div class="info">
+            <h1>{{ artist.Name }}</h1>
+            <button class="play-btn">Play</button>
+            <button class="like-btn"><i class="far fa-heart"></i></button>
+        </div>
+    </div>
+    <div class="navbar navbar-dark controls">
+        <ul class="songs-display">
+            <!-- <li><button type="button" class="btn overview-btn">Overview</button></li> -->
+            <li><a href="#" type="button" class="overview-btn">Top Songs</a></li>
+            <li><a href="#" type="button" class="songs-btn">Songs</a></li>
+            <li><a href="#" type="button" class="albums-btn">Albums</a></li>
+        </ul>
+    </div>
+    <div class="container content-list">
+        <div class="overview">
+            {% if albums is not True %}
+            {% for instance in albums %}
+            <a href="{{ instance.get_absolute_url }}" class="albums">
+                <p class="serialno">{{ forloop.counter }}</p>
+                <img class="album-img" src="/media/{{instance.AlbumLogo }}">
+                <p class="album-name">{{ instance.AlbumName }}</p>
+                <p class="release">Relesed on - {{ instance.ReleaseDate }}</p>
+            </a>
+            {% endfor %}
+            {% else %}
+            <p>No songs added to this album yet</p>
+            {% endif %}
+        </div>
+        <!-- <div style="display: none;" class="songs">
+            <div class="songs">
+                <p class="serialno">1</p>
+                <img class="song-img" src="">
+                <p class="song-name">Bloodline</p>
+                <audio controls class="player">
+                    <source src="media/audio/" type="audio/mpeg"/>
+                </audio>
+                <a href="#"><i class="far fa-heart"></i></a>
+            </div>
+        </div>
+        <div style="display: none;" class="albums">
+            <h1>albums</h1>
+        </div> -->
+    </div>
+</div>
+
+{% include "html/footer.html" %}
+
+{% endblock %}

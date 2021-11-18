@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/artist.css">
+    <link rel="javascript" href="js/artist.js">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Artist</title>
+</head>
+
+<body>
+    <div class="container artistpage">
+        <div class="main">
+            <div class="image">
+                <img src="https://c.saavncdn.com/artists/Ariana_Grande_005_20201127111716_500x500.jpg" alt=""
+                    class="img">
+            </div>
+            <div class="info">
+                <h1>Aiana Grande</h1>
+                <a href="#" class="btn btn-primary play-btn" role="button">Play</a>
+                <a href="#" class="btn btn-light like-btn" role="button"><i class="far fa-heart"></i></a>
+            </div>
+        </div>
+        <div class="navbar navbar-dark controls">
+            <ul class="songs-display">
+                <!-- <li><button type="button" class="btn overview-btn">Overview</button></li> -->
+                <li><a href="#" type="button" class="overview-btn">Top Songs</a></li>
+                <li><a href="#" type="button" class="songs-btn">Songs</a></li>
+                <li><a href="#" type="button" class="albums-btn">Albums</a></li>
+            </ul>
+        </div>
+        <div class="container content-list">
+            <div class="overview">
+                <div class="songs">
+                    <p class="serialno">1</p>
+                    <img class="song-img" src="https://pbs.twimg.com/media/D9tjApcWsAEMutF.jpg">
+                    <p class="song-name">Bloodline</p>
+                    <audio controls class="player">
+                        <source src="media/audio/Ariana_Grande_-_Bloodline.mp3" type="audio/mpeg"/>
+                    </audio>
+                    <a href="#"><i class="far fa-heart"></i></a>
+                </div>
+                <div class="songs">
+                    <p class="serialno">2</p>
+                    <img class="song-img" src="https://upload.wikimedia.org/wikipedia/en/e/ed/Ariana_Grande_-_The_Way.png">
+                    <p class="song-name">The Way</p>
+                    <audio controls class="player">
+                        <source src="media/audio/Ariana Grande - The Way ft. Mac Miller.mp3" type="audio/mpeg"/>
+                    </audio>
+                    <a href="#"><i class="far fa-heart"></i></a>
+                </div>
+                <div class="songs">
+                    <p class="serialno">3</p>
+                    <img class="song-img" src="https://m.media-amazon.com/images/M/MV5BMjg2NjExMjUtODUyNS00NWZhLWJjZmQtZWY5NDUyZmE4OWYzXkEyXkFqcGdeQXVyNjE0ODc0MDc@._V1_.jpg">
+                    <p class="song-name">Focus</p>
+                    <audio controls class="player">
+                        <source src="media/audio/Ariana Grande-Focus.mp3" type="audio/mpeg"/>
+                    </audio>
+                    <a href="#"><i class="far fa-heart"></i></a>
+                </div>
+            </div>
+            <!-- <div style="display: none;" class="songs">
+                <h1>songs</h1>
+            </div>
+            <div style="display: none;" class="albums">
+                <h1>albums</h1>
+            </div> -->
+        </div>
+    </div>
+</body>
+</html>

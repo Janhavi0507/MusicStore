@@ -1,0 +1,167 @@
+.home {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* main section */
+
+.main {
+  margin-top: 0px ;
+  background-color: #f8f2e0;
+}
+
+.main .container {
+  border: 1px solid black;
+  border-radius: 40px;
+  width: 80%;
+  height: 500px;
+  margin: 0% auto;
+  margin-bottom: 80px;
+  display: flex;
+}
+
+.main .main-text {
+  width: 100%;
+  height: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  align-items: center;
+  align-content: center;
+  margin-left: 0px;
+  color: #251a0b;
+}
+
+.main h4 {
+  margin-top: 120px;
+  font-size: 18px;
+}
+
+.main h2 {
+  margin-top: -20px;
+  font-size: 50px;
+}
+
+.main h5 {
+  margin-top: -30px;
+  font-size: 15px;
+}
+
+.main a {
+  margin-top: -30px;
+  font-size: 15px;
+  color: rgb(158, 152, 152);
+}
+
+.main .right {
+  width: 100%;
+  height: 80%;
+  margin-right: 25px;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.main .right img {
+  width: 500px;
+  height: 500px;
+}
+
+section {
+  background-size: 100%;
+  display: flex;
+  margin:0%;
+  /* margin-top: -2%; */
+  text-align: center;
+  overflow-x: auto;
+  padding-top: 5%;
+}
+
+.trending {
+  margin: 0;
+  background-color: #efe2b8;
+  height: 350px;
+  display: block;
+}
+
+.trending .text {
+  margin-top: -50px;
+  font-size: 20px;
+  margin-left: 40px;
+}
+
+.trending .links {
+  display: inline-flex;
+  margin-top: -20px;
+}
+
+.trending .trend {
+  margin-top: 20px;
+  width: 250px;
+  height: 250px;
+  color: rgb(51, 41, 24);
+}
+
+.trending a {
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.trending .trend .img {
+  margin-top: 15px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.trending .trend h2 {
+  margin-top: 20px;
+  font-size: 28px;
+}
+
+.trending .trend h4 {
+  margin-top: -5px;
+  font-size: 24px;
+}
+
+
+.artists {
+  margin: 0;
+  background-color: #efe2b8;
+  height: 400px;
+  display: block;
+}
+
+.artists .text {
+  margin-top: -50px;
+  font-size: 30px;
+  margin-left: 40px;
+}
+
+.artists .links {
+  display: inline-flex;
+  margin-top: 30px;
+}
+
+.artists .trend_artist {
+  margin-top: 20px;
+  width: 250px;
+  height: 250px;
+  color: rgb(51, 41, 24);
+}
+
+.artists a {
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.artists .trend_artist .img {
+  margin-top: 15px;
+  width: 55%;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.artists .trend_artist h4 {
+  margin-top: 20px;
+  font-size: 30px;
+}

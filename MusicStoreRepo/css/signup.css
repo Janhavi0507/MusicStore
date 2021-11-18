@@ -1,0 +1,107 @@
+.container {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.container .form-box {
+  width: 600px;
+  height: 550px;
+  margin: 2% auto;
+  position: relative;
+  /* border: 1px solid black; */
+}
+
+.container .form-box .button-box {
+  width: 100%;
+  margin: 5px auto;
+  justify-content: center;
+  position: relative;
+  border-radius: 30px;
+  display: flex;
+  
+}
+
+/* .container .form-box .button-box .toggle-btn {
+  border-radius: 5px;
+  position: relative;
+  font-size: 22px;
+  border: 0;
+  padding: 10px 20px;
+  background:#fff;
+  border-radius: 50px;
+} */
+
+.form-box .container-box {
+  width: 100%;
+  justify-content: center;
+}
+
+.form-box .container-box .sign-in, .sign-up {
+  position: relative;
+  width:380px;
+  height: 100%;
+  border: 0;
+  font-size: 20px;
+  padding:20px 30px;
+  background:#fff;
+  margin: auto 15%;
+  margin-bottom: 15%;
+  box-shadow:2px 2px 5px 5px rgba(0,0,0,0.15);
+  border-radius:10px;
+  z-index: 1px;
+}
+
+#signin {
+  margin-right: 10px;
+  margin-top: 15px;
+  font-size: 20px;
+  justify-self: center;
+}
+
+.sign-in h2, .sign-up h2 {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.sign-in .form-element, .sign-up .form-element {
+  margin: 20px 15px;
+}
+
+.sign-in .form-element .signup-link, .sign-up .form-element .signin-link {
+  text-decoration: none;
+}
+
+.sign-in .form-checkbox {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.sign-in .remember-me {
+  float: left;
+}
+
+.sign-in .form-button, .sign-up .form-button {
+  margin-top: 20px;
+  margin-left: 40%;
+}
+
+.sign-in .form-button #signin, .sign-up .form-button #signin {
+  margin-top: 10px;
+  font-size: 22px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.sign-in .form-checkbox .forgot-password {
+  float: right;
+  text-decoration: none;
+}
+
+.sign-in .form-element input, .sign-up .form-element input {
+  width: 100%;
+  height: 20px;
+  margin-top: 5px;
+}

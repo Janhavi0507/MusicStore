@@ -1,0 +1,53 @@
+{% include "html/base.html" %}
+
+{% block head %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles/login_signin.css' %}" type="text/css">
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="form-box">
+        <div class="container-box">
+            <div class="sign-in">
+                <h2>Sign in</h2>
+                <form action="#">
+                    <div class="form-element">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Enter email">
+                    </div>
+                    <div class="form-element">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter password">
+                    </div>
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Remember me</label>
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                    </div>
+                    <div class="form-button">
+                        <button type="submit" id="signin">Sign in</button>
+                    </div>
+                    <div class="form-element">
+                        Don't have an account? <a href="#" class="signup-link">Sign up</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <form class="site-form" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Sign-in">
+    </form>
+
+    {% for message in messages %}
+        <p>{{ message }}</p>
+    {% endfor %} -->
+
+    {% include 'html/footer.html' %}
+
+{% endblock %}

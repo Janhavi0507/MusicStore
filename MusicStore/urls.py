@@ -17,13 +17,18 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import  settings
 from django.conf.urls.static import static
-from Artist.views import ArtistPage, HomePage
-from Customer.views import sign_in
+from .views import BasePage, AlbumPage, ArtistPage, HomePage, sign_in, ProfilePage, login, logout
+from django.contrib.auth.views import LoginView
 app_name = 'music'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', BasePage, name='base'),
     path('Home/', HomePage, name='home'),
     path('signin/', sign_in, name='sign_in'),
-    path('<str:name>/', ArtistPage, name='artist'),
-]
+    path('login/', login, name='login'),
+    # path('logout/', logout, name='logout'),
+    path('profile', ProfilePage, name='profile'),
+    path('<str:artist_name>/', ArtistPage, name='artist'),
+    path('<str:artist_name>/<str:album_name>', AlbumPage, name='album'),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

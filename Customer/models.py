@@ -1,5 +1,6 @@
 from django.db import models
-from django.db.models.signals import pre_save
+from Artist.models import Artist
+from Song.models import Song
 from MusicStore.utils import unique_song_id_generator
 from phonenumber_field.modelfields import PhoneNumberField
 
@@ -18,8 +19,10 @@ class Customer(models.Model):
     def __str__(self):
         return f'{self.First_Name} {self.Last_Name} ({self.Username})'
 
-# def presave_create_song_id(sender, instance, *args, **kwargs):
-#     if not instance.Customer_ID:
-#         instance.Customer_ID = unique_song_id_generator(instance)
+class Following(models.Model):
+    User = models.ForeignKey(Customer, on_delete=models.CASCADE)
+    Artist = models.ForeignKey(Artist, on_delete=models.CASCADE)
 
-# pre_save.connect(presave_create_song_id, sender=Customer)
+class Playlist(models.Model):
+    User = models.ForeignKey(Customer, on_delete=models.CASCADE)
+    Song = models.ForeignKey(Song, on_delete=models.CASCADE)

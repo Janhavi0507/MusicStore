@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/albums.css">
+    <title>Album</title>
+</head>
+
+<body>
+    <div class="album-container">
+        <div class="album-info">
+            <div class="image">
+                <img src="https://c.saavncdn.com/artists/Ariana_Grande_005_20201127111716_500x500.jpg" alt=""
+                    class="img">
+            </div>
+            <div class="info">
+                <h1>Ariana Grande</h1>
+                <a href="#" class="btn btn-primary play-btn" role="button">Play</a>
+                <a href="#" class="btn btn-light like-btn" role="button"><i class="far fa-heart"></i></a>
+            </div>
+        </div>
+        <div class=song-container>
+
+            <div class="songs">
+                <div><a href="" class="playbtn"><img src="controls/play-button.png" alt="" height="40px"></a></div>
+                 <div></div>
+                <div><p>Song Name</p></div>
+                <div><p>Artists</p></div>
+                <div><a href="#"><img class="like" src="images/heart.png" height="40px"></a></div>
+                <div><p>5:00</p></div>
+            </div>
+            <div class="songs">
+                <div><a href="" class="playbtn"><img src="controls/play-button.png" alt="" height="40px"></a></div>
+                 <div></div>
+                <div><p>Song Name</p></div>
+                <div><p>Artists</p></div>
+                <div><a href="#"><img class="like" src="images/heart.png" height="40px"></a></div>
+                <div><p>5:00</p></div>
+            </div>
+            <div class="songs">
+                <div><a href="" class="playbtn"><img src="controls/play-button.png" alt="" height="40px"></a></div>
+                 <div></div>
+                <div><p>Song Name</p></div>
+                <div><p>Artists</p></div>
+                <div><a href="#"><img class="like" src="images/heart.png" height="40px"></a></div>
+                <div><p>5:00</p></div>
+            </div>
+            <div class="songs">
+                <div><a href="" class="playbtn"><img src="controls/play-button.png" alt="" height="40px"></a></div>
+                 <div></div>
+                <div><p>Song Name</p></div>
+                <div><p>Artists</p></div>
+                <div><a href="#"><img class="like" src="images/heart.png" height="40px"></a></div>
+                <div><p>5:00</p></div>
+            </div>
+            <div class="songs">
+                <div><a href="" class="playbtn"><img src="controls/play-button.png" alt="" height="40px"></a></div>
+                 <div></div>
+                <div><p>Song Name</p></div>
+                <div><p>Artists</p></div>
+                <div><a href="#"><img class="like" src="images/heart.png" height="40px"></a></div>
+                <div><p>5:00</p></div>
+            </div>
+            <div class="songs">
+                <div><a href="" class="playbtn"><img src="controls/play-button.png" alt="" height="40px"></a></div>
+                 <div></div>
+                <div><p>Song Name</p></div>
+                <div><p>Artists</p></div>
+                <div><a href="#"><img class="like" src="images/heart.png" height="40px"></a></div>
+                <div><p>5:00</p></div>
+            </div>
+            <div class="songs">
+                <div><a href="" class="playbtn"><img src="controls/play-button.png" alt="" height="40px"></a></div>
+                 <div></div>
+                <div><p>Song Name</p></div>
+                <div><p>Artists</p></div>
+                <div><a href="#"><img class="like" src="images/heart.png" height="40px"></a></div>
+                <div><p>5:00</p></div>
+            </div>
+            <div class="songs">
+                <div><a href="" class="playbtn"><img src="controls/play-button.png" alt="" height="40px"></a></div>
+                 <div></div>
+                <div><p>Song Name</p></div>
+                <div><p>Artists</p></div>
+                <div><a href="#"><img class="like" src="images/heart.png" height="40px"></a></div>
+                <div><p>5:00</p></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $(".like").click(function () {
+                $(".like").toggleClass("liked");
+            });
+
+
+            $(".playAll").click(function () {
+                $(this).text(function (i, text) {
+                    return text === "Pause" ? "Play" : "Pause";
+                });
+            });
+
+            
+
+        });
+    </script>
+</body>
+
+</html>
