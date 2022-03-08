@@ -1,4 +1,4 @@
-from django.contrib import admin, auth
+from django.contrib import admin
 from .models import Customer
 # Register your models here.
 

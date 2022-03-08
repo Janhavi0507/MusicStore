@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,29 +12,26 @@
     {% endblock %}
     <title>Play Lite Music</title>
 </head>
+
 <body>
     <div class="base">
-        <nav class="navbar">
-            <a class="header1" href="{% url 'home' %}">
-                <img class="nav-img" src="/media/images/itunes.png" height="20px">
-                <span>PlayLit Music</span>
-            </a>
-            <div class="menu">
-                <div class="links">
-                    <a href="{% url 'home' %}">Home</a>
-                    <!-- <a href="#">Albums</a>
-                    <a href="#">Artists</a> -->
-                </div>
-    
-                <div class="account">
-                    <a href="{% url 'login' %}" style="float: right;" id="signup">Sign in</a>
-                    <a href="{% url 'sign_in' %}" style="float: right;" id="signup">Sign up</a>
-                    <a href="#" style="float: right;" id="profile"><i class="fa fa-user" aria-hidden="true"></i></a>
-                </div>
+        <nav class="navbar container-fluid">
+            <div class="logo">
+                <img class="nav-img menulinks" src="/media/images/itunes.png" height="40px">
+            </div>
+            <div class="sitename">
+                <a class="span menulinks" href="{% url 'home' %}">PlayLit Music</a>
+            </div>
+            <div class="account">
+                <a href="{% url 'login' %}" class="accountlinks">Sign in</a>
+                <a href="{% url 'sign_up' %}" class="accountlinks">Sign up</a>
+                <a href="{% url 'profile' request.user %}" class="accountlinks" id="profile"><i class="fa fa-user" aria-hidden="true"></i></a>
+                <a href="{% url 'logout' %}" class="accountlinks">Logout</a>
             </div>
         </nav>
         {% block content %}
         {% endblock %}
     </div>
 </body>
+
 </html>

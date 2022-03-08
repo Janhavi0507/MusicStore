@@ -1,0 +1,36 @@
+{% include "html/base.html" %}
+
+{% block head %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles/profile.css' %}" type="text/css">
+{% endblock %}
+
+{% block content %}
+
+<div class="edit-container">
+  <div class="profile">
+    <h1>Profile</h1>
+    <div id="profileImage">
+      <img src="{{ user.Photo }}" alt="Profile Image" style="width: 200px;">
+      <h3>Edit Pic</h3>
+    </div>
+  
+    <div class="profileDetails">
+      <label for="Name">Name</label>
+      <input type="text" id="Name" value="{{ user.First_Name }} {{ user.Last_Name }}">
+  
+      <label for="username">Username</label>
+      <input type="text" id="username" value="{{ user.Username }}">
+  
+      <label for="emailId">Email</label>
+      <input type="text" id="EmailId" value="{{ user.Email }}">
+  
+      <label for="phoneno">Phone Number</label>
+      <input type="text" id="phoneno" value="{{ user.Phone_Number }}">
+    </div>
+  </div>
+</div>
+
+{% include 'html/footer.html' %}
+
+{% endblock %}

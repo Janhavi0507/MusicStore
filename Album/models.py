@@ -5,10 +5,10 @@ from django.urls import reverse
 # Create your models here.
 
 class Album(models.Model):
-    SerialNo = models.AutoField(primary_key=True)
-    AlbumName = models.CharField(max_length=200)
-    AlbumLogo = models.ImageField(default="images/No_Image.png", upload_to='images')
-    ReleaseDate = models.DateField()
+    Serial_No = models.AutoField(primary_key=True)
+    Album_Name = models.CharField(max_length=200)
+    Album_Logo = models.ImageField(default="images/No_Image.png", upload_to='images')
+    Release_Date = models.DateField()
     Artist = models.ForeignKey(Artist, on_delete=models.CASCADE)
 
     def __str__(self):

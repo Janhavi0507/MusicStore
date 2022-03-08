@@ -8,7 +8,7 @@
 
 .main {
   margin-top: 0px ;
-  background-color: #f8f2e0;
+  background-color: white;
 }
 
 .main .container {
@@ -78,7 +78,7 @@ section {
 
 .trending {
   margin: 0;
-  background-color: #efe2b8;
+  background-color: white;
   height: 350px;
   display: block;
 }
@@ -104,6 +104,7 @@ section {
 .trending a {
   text-decoration: none;
   margin-right: 10px;
+  padding-bottom: 20px;
 }
 
 .trending .trend .img {
@@ -126,7 +127,7 @@ section {
 
 .artists {
   margin: 0;
-  background-color: #efe2b8;
+  background-color: white;
   height: 400px;
   display: block;
 }

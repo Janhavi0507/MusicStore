@@ -63,7 +63,7 @@ ROOT_URLCONF = 'MusicStore.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
+        'DIRS': [BASE_DIR / 'music_store/build'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -84,8 +84,8 @@ WSGI_APPLICATION = 'MusicStore.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'MusicStore',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'users.db.sqlite3',
     }
 }
 
@@ -108,6 +108,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTH_USER_MODEL = 'Customer.Customer'
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
@@ -128,7 +129,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    BASE_DIR / 'static',
+    BASE_DIR / 'music_store/build/static',
 ]
 
 # Default primary key field type

@@ -1,0 +1,51 @@
+<div class="sign-up">
+  <h2>Sign up</h2>
+  <form method="POST" action="">
+      {% csrf_token %}
+      <div class="form-element">
+          <label for="fname">First Name</label>
+          <!-- <input type="text" id="fname" placeholder="Enter first name"> -->
+          {{ form.First_Name }}
+      </div>
+      <div class="form-element">
+          <label for="lname">Last Name</label>
+          <!-- <input type="text" id="lname" placeholder="Enter last name"> -->
+          {{ form.Last_Name }}
+      </div>
+      <div class="form-element">
+          <label for="phone">Phone Number</label>
+          <!-- <input type="text" id="phone" placeholder="Enter phone number"> -->
+          {{ form.Phone_Number }}
+      </div>
+      <div class="form-element">
+          <label for="uname">Username</label>
+          <!-- <input type="text" id="uname" placeholder="Enter username"> -->
+          {{ form.Username }}
+      </div>
+      <div class="form-element">
+          <label for="email">Email</label>
+          <!-- <input type="text" id="email" placeholder="Enter email"> -->
+          {{ form.Email }}
+      </div>
+      <div class="form-element">
+          <label for="password">Password</label>
+          <!-- <input type="password" id="password" placeholder="Enter password"> -->
+          {{ form.Password }}
+      </div>
+      <div class="form-element">
+          <label for="password">Password2</label>
+          <p>Enter same password as above.</p>
+          <!-- <input type="password" id="password" placeholder="Enter password"> -->
+          {{ form.password2 }}
+      </div>
+      <div class="form-button">
+          <button type="submit" id="signin">Sign up</button>
+      </div>
+      {% for message in messages %}
+      <p class="message">{{ message }}</p>
+      {% endfor %}
+      <div class="form-element">
+          Already have an account? <a href="#" class="signin-link">Sign in</a>
+      </div>
+  </form>
+</div>

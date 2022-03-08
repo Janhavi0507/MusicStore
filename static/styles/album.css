@@ -67,7 +67,7 @@
 }
 
 .songs-list {
-  background-color:#efe2b8;
+  background-color: white;
 }
 
 .overview {
@@ -85,7 +85,7 @@
   display: grid;
   align-self: center;
   /* vertical-align: middle; */
-  grid-template-columns: 5% 30% 40% 10%;
+  grid-template-columns: 5% 30% 40% 10% 10%;
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -111,4 +111,16 @@
 
 .overview .songs a, .overview .songs i {
   margin-top: 8%;
+}
+
+#like-btn {
+  background-color: inherit;
+  border: none;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+}
+
+#like-btn:hover {
+  color: red;
 }

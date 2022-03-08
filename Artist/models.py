@@ -4,9 +4,11 @@ from django.urls import reverse
 # Create your models here.
 
 class Artist(models.Model):
-    Name = models.CharField(max_length=100)
+    Artist_Id = models.BigAutoField(primary_key=True)
+    Artist_Name = models.CharField(max_length=100)
     Photo = models.ImageField(default="images/No_Image.png", upload_to='images')
-    followers = models.PositiveBigIntegerField(default=0)
+    Followers = models.PositiveBigIntegerField(default=0)
+    # Date_joined = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return f'{self.Name}'

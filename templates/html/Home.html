@@ -33,7 +33,7 @@
             {% for instance in trending %}
             <a href="{% url 'album' instance.Album.Artist.Name instance.Album.AlbumName %}">
                 <div class="trend">
-                    <img src="/media/images/{{ instance.Album.AlbumLogo }}"
+                    <img src="/media/{{ instance.Album.AlbumLogo }}"
                         alt="{{ instance.Title }}" class="img">
                     <h2>{{ instance.Title }}</h2>
                     <h4>{{ instance.Album.Artist.Name }}</h4>

@@ -11,13 +11,13 @@
 <div class="albumpage">
     <div class="albums">
         <div class="image">
-            <img src="/media/images/{{ album.AlbumLogo }}" alt="Album Profile Photo"
+            <img src="/media/{{ album.AlbumLogo }}" alt="Album Profile Photo"
                 class="img">
         </div>
         <div class="info">
             <h1>{{ album.AlbumName }}</h1>
             <button class="play-btn">Play</button>
-            <button class="like-btn"><i class="far fa-heart"></i></button>
+            <!-- <button class="like-btn"><i class="far fa-heart"></i></button> -->
         </div>
     </div>
     <div class="container songs-list">
@@ -32,7 +32,11 @@
                     <source src="{{ instance.SongAudio.url }}" type="audio/mpeg"/>
                     <source src="{{ instance.SongAudio.url }}" type="audio/mpeg"/>
                 </audio>
-                <a href="#"><i class="far fa-heart"></i></a>
+                <form action="{% url 'like_song' %}" method="POST">
+                    {% csrf_token %}
+                    <button type="submit" name="song_id" id="like-btn" value="{{ instance.AudioID }}"><i class="far fa-heart"></i></button>
+                </form>
+                <p class="song-name">Likes - {{ instance.total_likes }}</p>
             </div>
             {% endfor %}
             {% else %}
